@@ -8,3 +8,6 @@ Read the competition, built the first solvers and per-n tooling, first Kaggle su
 ## 2026-10-23
 Approved an AWS budget for hop search; reviewed public notebooks and merged to 22.3747.
 
+## 2026-10-24
+Stopped AWS spending, set up a recurring public-notebook check with certification, submitted the merged file (22.3611).
+
