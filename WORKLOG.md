@@ -11,3 +11,6 @@ Approved an AWS budget for hop search; reviewed public notebooks and merged to 2
 ## 2026-10-24
 Stopped AWS spending, set up a recurring public-notebook check with certification, submitted the merged file (22.3611).
 
+## 2026-10-30
+Built best_fit.csv (n=1..100), best_fit_101_500.csv, best_fit_501_1000.csv and best_fit_summary.csv; per-row update workflow.
+
