@@ -14,3 +14,6 @@ Stopped AWS spending, set up a recurring public-notebook check with certificatio
 ## 2026-10-30
 Built best_fit.csv (n=1..100), best_fit_101_500.csv, best_fit_501_1000.csv and best_fit_summary.csv; per-row update workflow.
 
+## 2026-10-31
+Diagnosed Kaggle clearance requirement (22.3564 vs 22.2604 locally), wrote enforce.py and isolated certification, started a long Kaggle GPU search.
+
