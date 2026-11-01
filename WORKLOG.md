@@ -17,3 +17,6 @@ Built best_fit.csv (n=1..100), best_fit_101_500.csv, best_fit_501_1000.csv and b
 ## 2026-10-31
 Diagnosed Kaggle clearance requirement (22.3564 vs 22.2604 locally), wrote enforce.py and isolated certification, started a long Kaggle GPU search.
 
+## 2026-11-01
+Merged the GPU result and all public notebooks and datasets per puzzle; submitted 22.2603.
+
