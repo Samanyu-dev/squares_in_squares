@@ -20,3 +20,6 @@ Diagnosed Kaggle clearance requirement (22.3564 vs 22.2604 locally), wrote enfor
 ## 2026-11-01
 Merged the GPU result and all public notebooks and datasets per puzzle; submitted 22.2603.
 
+## 2026-11-05
+Merged new public notebooks and datasets to the public frontier (22.24988); built the final enforced and certified file.
+
