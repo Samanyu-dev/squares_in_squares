@@ -23,3 +23,6 @@ Merged the GPU result and all public notebooks and datasets per puzzle; submitte
 ## 2026-11-05
 Merged new public notebooks and datasets to the public frontier (22.24988); built the final enforced and certified file.
 
+## 2026-11-06
+Submitted 22.2499 (Kaggle confirmed), analysed per-n quality tiers, wrote the report, README and interactive explorer.
+
