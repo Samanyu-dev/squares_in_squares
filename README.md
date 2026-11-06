@@ -4,14 +4,14 @@
 
 ### Packing *n* unit squares into the smallest possible square, for every *n* = 1 … 1000
 
-![Kaggle score](https://img.shields.io/badge/Kaggle%20score-22.24988-brightgreen?style=for-the-badge&logo=kaggle)
+![Kaggle score](https://img.shields.io/badge/Kaggle%20score-22.23624-brightgreen?style=for-the-badge&logo=kaggle)
 ![Grid baseline](https://img.shields.io/badge/grid%20baseline-28.9377-lightgrey?style=for-the-badge)
 ![Leaderboard top](https://img.shields.io/badge/LB%20top-22.054-orange?style=for-the-badge)
 ![Python](https://img.shields.io/badge/python-3.14-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![CUDA](https://img.shields.io/badge/numba-CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
 ![Status](https://img.shields.io/badge/status-public%20frontier-blueviolet?style=for-the-badge)
 
-**[🔎 Open the interactive explorer](docs/index.html)** &nbsp;·&nbsp; **[📄 Project report](PROJECT_REPORT.md)** &nbsp;·&nbsp; **[📊 Per-n data](data_out/quality_by_n.csv)** &nbsp;·&nbsp; **[📦 Best submission](data_out/submission_22.2498820.csv)**
+**[🔎 Open the interactive explorer](docs/index.html)** &nbsp;·&nbsp; **[📄 Project report](PROJECT_REPORT.md)** &nbsp;·&nbsp; **[📊 Per-n data](data_out/quality_by_n.csv)** &nbsp;·&nbsp; **[📦 Best submission](data_out/submission_22.2362420.csv)**
 
 </div>
 
@@ -58,12 +58,12 @@ The area bound says L ≥ √n, so the cost of a puzzle is the *wasted* fraction
 
 <table>
 <tr><th>Item</th><th>Value</th></tr>
-<tr><td>🟢 <b>Our Kaggle score</b></td><td><b>22.2498820302</b> (submitted 2026-11-05, equals the local score to 9 digits)</td></tr>
-<tr><td>Previous submission</td><td>22.2602676085</td></tr>
+<tr><td>🟢 <b>Our Kaggle score</b></td><td><b>22.2362359319</b> (submitted 2026-11-06, equals the local score to 9 digits). Certified local best 22.2318355 (7 Nov, not yet submitted)</td></tr>
+<tr><td>Previous submission</td><td>22.2498820302</td></tr>
 <tr><td>Grid baseline (start)</td><td>28.9377</td></tr>
 <tr><td>Leaderboard top (2026-11-06)</td><td>22.0544 · 22.0871 · 22.1217 · 22.1224</td></tr>
 <tr><td>Gap to top</td><td>0.195</td></tr>
-<tr><td>Public frontier</td><td>≈ 22.2499, which we match</td></tr>
+<tr><td>Public frontier</td><td>≈ 22.2322 (A Square Deal); our certified local best is 0.0004 below</td></tr>
 </table>
 
 ```mermaid
@@ -229,7 +229,7 @@ flowchart TD
 | `README.md` | This file |
 | `PROJECT_REPORT.md` | Short factual report |
 | `docs/index.html` | Interactive explorer (tiers, chart, search, table) |
-| `data_out/submission_22.2498820.csv` | The submitted file (500,500 rows) |
+| `data_out/submission_22.2362420.csv` | The submitted file (500,500 rows) |
 | `data_out/quality_by_n.csv` | n, L, excess, tier, tilted squares |
 | `best_fit_summary.csv` | One row per n up to 2000 (rows > 1000 are outside the competition) |
 | `best_fit.csv`, `best_fit_101_500.csv`, `best_fit_501_1000.csv` | Per-square rows for the best packings |

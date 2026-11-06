@@ -9,8 +9,8 @@ Account: samanyu1808.
 | Item | Value |
 |---|---|
 | Best file | `watch/final_enforced4.csv` |
-| Kaggle score (submitted 2026-11-05) | **22.2498820302** (matches local score to 9 digits) |
-| Previous submission | 22.2602676085 (`final_enforced3.csv`) |
+| Kaggle score (submitted 2026-11-06) | **22.2362359319**; certified local best 22.2318355162 (7 Nov, unsubmitted) |
+| Previous submission | 22.2498820302 (`final_enforced4.csv`) |
 | Starting point (grid baseline) | 28.9377 |
 | Leaderboard top (2026-11-06) | 22.0544, 22.0871, 22.1217 |
 | Gap to 22.20 / 22.10 / 22.00 | 0.050 / 0.150 / 0.250 |

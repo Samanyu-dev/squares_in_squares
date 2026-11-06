@@ -19,3 +19,14 @@
 !/watch/enforce.py
 !/aws_job/
 !/aws_job/run_hop.py
+!/stretch/
+!/stretch/*.py
+!/watch/make_enforced.py
+!/nbsub/
+!/nbsub/*.py
+!/nbsub/*.sh
+!/nbsub/kernel/
+!/nbsub/kernel/*
+!/targets_vs_leaders.csv
+!/worst_n_values.csv
+!/PROMPT_FOR_OTHER_LLM.md
