@@ -89,9 +89,13 @@ xychart-beta
 | 6 | 22.3611 | First Kaggle submission of a merged file |
 | 7 | 22.2616 | Merge under the tightened metric |
 | 8 | 22.2603 | Clearance fix, then re-merge |
-| 9 | **22.2499** | All public notebooks and ~12 datasets, 2e-11 clearance |
+| 9 | 22.2499 | All public notebooks and ~12 datasets, 2e-11 clearance |
+| 10 | 22.2382 | Merged new public notebooks (final_enforced5) |
+| 11 | 22.2362 | More notebooks plus first own stretch+fq chain wins (Kaggle-scored) |
+| 12 | 22.2318 | penguin069 portfolio, own AWS/local chains, notebook submission |
+| 13 | **22.2247** | jazivxt Boxed In merged per puzzle plus own chains (Kaggle 22.2246648506, 7 Nov) |
 
-> Every gain after step 1 came from **merging other people's public packings with per-puzzle certification**, never from our own search.
+> Most gains came from **merging other people's public packings with per-puzzle certification**; our own stretch+fq chains added only ~3e-4 (steps 11-13).
 
 ---
 
