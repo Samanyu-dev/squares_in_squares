@@ -82,3 +82,9 @@ Every step came from merging public work with per-puzzle certification, never fr
 - Kaggle 22.2246648506 (final_enforced11, per-puzzle merge incl. jazivxt Boxed In, certified with isolated_cert).
 - Per-puzzle leader sides form lift chains L(n)=L(n')+m (23 of 407 behind-puzzles, e.g. 259->445->488->681->734->967); our deficit is identical along a chain, so only improving the root helps. No lift gain exists today (checked).
 - Hot kick+quench on roots 259,202,228,292,328,442,444: no gain. seedband.py (corner-to-corner band seeds): no gain. Chains on n>=100 top-gap puzzles and AWS n>=500 chains still running.
+
+## 8 Nov update
+- Kaggle 22.2228889219 (notebook submission, final_enforced14). Certified locally 22.2226173288 (new jazivxt Boxed In version, not yet submitted).
+- Per-puzzle leaderboard: 1 ahead (n=109), 61 tied, 411 behind, gap 0.157.
+- Leaders' K^2+1 sides are not in Q(sqrt 2); their offset L-K is constant in runs of K (fixed local gadget). Exact 0/45 lattice ILP (evo/lattice.py) finds the 5x5 diamond but nothing below it at K=20.
+- Full details: docs/PROGRESS_REPORT.md.

@@ -58,11 +58,13 @@ The area bound says L ≥ √n, so the cost of a puzzle is the *wasted* fraction
 
 <table>
 <tr><th>Item</th><th>Value</th></tr>
-<tr><td>🟢 <b>Our Kaggle score</b></td><td><b>22.2246648506</b> (submitted 2026-11-07, merged public Boxed In + our chains, equals the certified local score)</td></tr>
-<tr><td>Previous submission</td><td>22.2362359319</td></tr>
+<tr><td>🟢 <b>Our Kaggle score</b></td><td><b>22.2228889219</b> (submitted 2026-11-07 via notebook, equals the certified local score)</td></tr>
+<tr><td>Certified locally, not yet submitted</td><td><b>22.2226173288</b></td></tr>
+<tr><td>Previous submissions</td><td>22.2246648506, 22.2241274836, 22.2234504853</td></tr>
+<tr><td>Per-puzzle leaderboard</td><td>1 ahead (n=109), 61 tied, 411 behind (gap 0.157 in score)</td></tr>
 <tr><td>Grid baseline (start)</td><td>28.9377</td></tr>
 <tr><td>Leaderboard top (2026-11-06)</td><td>22.0544 · 22.0871 · 22.1217 · 22.1224</td></tr>
-<tr><td>Gap to top</td><td>0.195</td></tr>
+<tr><td>Gap to top</td><td>0.17</td></tr>
 <tr><td>Public frontier</td><td>≈ 22.2247 (Boxed In); we hold the same merged bank, per-puzzle leaders sum ≈ 22.07</td></tr>
 </table>
 
@@ -71,8 +73,12 @@ xychart-beta
     title "Certified total over time (lower is better)"
     x-axis ["grid", "v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "now"]
     y-axis "score" 22 --> 29
-    line [28.94, 28.36, 27.32, 26.79, 22.48, 22.37, 22.36, 22.26, 22.2603, 22.2499, 22.2382, 22.2362, 22.2318, 22.2247]
+    line [28.94, 28.36, 27.32, 26.79, 22.48, 22.37, 22.36, 22.26, 22.2603, 22.2499, 22.2382, 22.2362, 22.2318, 22.2247, 22.2241, 22.2235, 22.2229, 22.2226]
 ```
+
+---
+
+> Full status, what worked and failed, and per-n tables: **[docs/PROGRESS_REPORT.md](docs/PROGRESS_REPORT.md)**
 
 ---
 
@@ -93,7 +99,11 @@ xychart-beta
 | 10 | 22.2382 | Merged new public notebooks (final_enforced5) |
 | 11 | 22.2362 | More notebooks plus first own stretch+fq chain wins (Kaggle-scored) |
 | 12 | 22.2318 | penguin069 portfolio, own AWS/local chains, notebook submission |
-| 13 | **22.2247** | jazivxt Boxed In merged per puzzle plus own chains (Kaggle 22.2246648506, 7 Nov) |
+| 13 | 22.2247 | jazivxt Boxed In merged per puzzle plus own chains (Kaggle 22.2246648506, 7 Nov) |
+| 14 | 22.2241 | Own chain wins n=417, 595 (Kaggle 22.2241274836) |
+| 15 | 22.2235 | kmmmvs merge, n=109 beats a leader, n=339, 18 AWS wins n=650-990 (Kaggle 22.2234504853) |
+| 16 | 22.2229 | More chain wins (n=417-690) and AWS ch4 jobs (Kaggle 22.2228889219, 8 Nov) |
+| 17 | **22.2226** | New jazivxt Boxed In version, 18 wins (certified, not yet submitted) |
 
 > Most gains came from **merging other people's public packings with per-puzzle certification**; our own stretch+fq chains added only ~3e-4 (steps 11-13).
 
@@ -148,8 +158,8 @@ Score by range of n:
 |---|--:|--:|
 | 1 – 100 | 6.3012 | 0.0630 |
 | 101 – 300 | 5.4873 | 0.0274 |
-| 301 – 600 | 5.2948 | 0.0176 |
-| 601 – 1000 | 5.1413 | 0.0129 |
+| 301 – 600 | 5.2937 | 0.0176 |
+| 601 – 1000 | 5.1404 | 0.0129 |
 
 👉 **[Open the interactive explorer](docs/index.html)** (enable GitHub Pages on `/docs` to use it online, or open the file locally). It has tier filters, a hover chart, a search box and a sortable table.
 
@@ -171,6 +181,8 @@ Score by range of n:
 | 🏗️ Tilted-stack probe | Erdős–Graham one-block construction | Negative: needs f ≈ 0.87 at K = 31, our table has 0.52 |
 | 🔧 Contact-LP unjam on Kaggle GPU | Tilt hundreds of squares ~1e-4 rad, solve an LP over contacts | 21 min, gain **0.000014** |
 | 🌐 **Per-puzzle merge of public work** | Take the smallest *certified* L for each n from 98 notebooks + ~12 datasets | **All real gains** |
+| 🔗 Stretch + fq quench chains (local + AWS) | Cut a packing, copy an arm, shift, quench, kick | **~0.002 total**, n=109 beats a leader |
+| 🔬 Overlap squeeze, cut-and-reinsert, mirror, rotation, band/diamond seeds, program search, 0°/45° lattice ILP | Structural experiments | **0 gains** (see progress report) |
 | 💬 Reading discussions | Metric bug threads, the Soft-to-Rigid paper | Nothing new to merge |
 
 </details>

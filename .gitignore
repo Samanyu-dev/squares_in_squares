@@ -30,3 +30,8 @@
 !/targets_vs_leaders.csv
 !/worst_n_values.csv
 !/PROMPT_FOR_OTHER_LLM.md
+!/docs/*.md
+!/evo/
+!/evo/*.py
+!/watch/wins2csv.py
+!/data_out/*.json

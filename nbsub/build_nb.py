@@ -85,7 +85,28 @@ The certified file is copied byte for byte (no re-formatting of floats, which co
 code("""import shutil; shutil.copy(SRC, '/kaggle/working/submission.csv')  # byte-identical copy of the certified file (no float re-formatting)
 R[['L','excess','min_clearance','tilted_squares']].to_csv('/kaggle/working/per_puzzle_L.csv')
 print('wrote submission.csv', df.shape, f'| local score {score:.10f}')"""),
-md("""## What did not work
+md("""## 4b. Structure of the packings
+Every puzzle is classified from its angles: `grid` (all squares upright), `diag45` (tilted squares at 45 degrees) or `tilted-arms` (arms at other tilts, the stretch-and-quench family). The table shows how many puzzles and how much of the score each family carries."""),
+code("""P = pd.read_csv(glob.glob('/kaggle/input/**/per_puzzle_table.csv', recursive=True)[0]).set_index('n')
+S = P.groupby('structure').agg(puzzles=('L','size'), score=('excess','sum'), mean_excess=('excess','mean')); display(S.round(4))
+fig, ax = plt.subplots(1, 2, figsize=(13, 4))
+for k, g in P.groupby('structure'): ax[0].scatter(g.index, 100*g.excess, s=5, label=k)
+ax[0].legend(); ax[0].set_xlabel('n'); ax[0].set_ylabel('excess %'); ax[0].set_title('Excess by structure family')
+H = pd.read_csv(glob.glob('/kaggle/input/**/score_history.csv', recursive=True)[0])
+ax[1].plot(H.step, H.score, 'o-'); ax[1].set_ylim(22.2, 22.6); ax[1].set_xlabel('step'); ax[1].set_ylabel('certified score'); ax[1].set_title('Score history (zoomed)')
+plt.tight_layout(); plt.savefig('/kaggle/working/structure_history.png', dpi=110); display(H)"""),
+md("""## 4c. Position against the per-puzzle leaderboard
+For every puzzle with a leader row we compare our side with the leader's. `AHEAD` means our L is strictly smaller than the leader's (a per-puzzle record), `tied` means equal within 1e-9. Leader values are a dated snapshot (see METHODS.md). The gap is also expressed in score units, `(L - L_leader)/sqrt(n)`."""),
+code("""C = P[P.status != 'no leader row']
+print(C.status.value_counts().to_dict(), '| total gap on puzzles where we trail:', round(C[C.status == 'behind'].gap_score.sum(), 4))
+display(C[C.status == 'AHEAD'][['L','leader_L','gap_L','leader_team']].round(9))
+display(C[C.status == 'behind'].sort_values('gap_score').head(15)[['L','leader_L','gap_L','gap_score','leader_team']].round(6))
+fig, ax = plt.subplots(figsize=(7, 4)); b = C[C.status == 'behind']; ax.scatter(b.index, b.gap_score, s=5); ax.set_yscale('log')
+ax.set_xlabel('n'); ax.set_ylabel('gap to leader (score units)'); ax.set_title('Remaining gap per puzzle'); plt.savefig('/kaggle/working/gap_to_leaders.png', dpi=110)"""),
+md("""## 4d. Lift chains in the leaders' sides
+The leaders' sides satisfy `L(n) = L(n') + m` for whole `m` on many pairs (m extra rows and columns of upright squares added around a smaller packing). Our deficit is identical along each chain, so improving one root puzzle should improve every puzzle in its chain. We checked that no puzzle of ours can currently be improved by lifting a smaller packing of ours."""),
+code("""Ch = pd.read_csv(glob.glob('/kaggle/input/**/lift_chains.csv', recursive=True)[0]); display(Ch)"""),
+md("""## What did not work (full list in METHODS.md in the dataset)
 Own annealing/GPU search beyond n~70, gadget DP rebuilds, contact-LP unjam, boundary LNS, delete-one-and-squeeze, plain random restarts below the grid ceiling for n=12..57. All matched public values or found nothing. The only real gains came from per-puzzle merging of public work and from stretch + quench.
 
 ## Remaining gap
