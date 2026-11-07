@@ -11,7 +11,7 @@
 ![CUDA](https://img.shields.io/badge/numba-CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
 ![Status](https://img.shields.io/badge/status-public%20frontier-blueviolet?style=for-the-badge)
 
-**[🔎 Open the interactive explorer](docs/index.html)** &nbsp;·&nbsp; **[📄 Project report](PROJECT_REPORT.md)** &nbsp;·&nbsp; **[📊 Per-n data](data_out/quality_by_n.csv)** &nbsp;·&nbsp; **[📦 Best submission](data_out/submission_22.2362420.csv)**
+**[🔎 Open the interactive explorer](docs/index.html)** &nbsp;·&nbsp; **[📄 Project report](PROJECT_REPORT.md)** &nbsp;·&nbsp; **[📊 Per-n data](data_out/quality_by_n.csv)** &nbsp;·&nbsp; **[📦 Best submission](data_out/submission_22.2246648.csv)**
 
 </div>
 
@@ -63,7 +63,7 @@ The area bound says L ≥ √n, so the cost of a puzzle is the *wasted* fraction
 <tr><td>Grid baseline (start)</td><td>28.9377</td></tr>
 <tr><td>Leaderboard top (2026-11-06)</td><td>22.0544 · 22.0871 · 22.1217 · 22.1224</td></tr>
 <tr><td>Gap to top</td><td>0.195</td></tr>
-<tr><td>Public frontier</td><td>≈ 22.2322 (A Square Deal); our certified local best is 0.0004 below</td></tr>
+<tr><td>Public frontier</td><td>≈ 22.2247 (Boxed In); we hold the same merged bank, per-puzzle leaders sum ≈ 22.07</td></tr>
 </table>
 
 ```mermaid
@@ -71,7 +71,7 @@ xychart-beta
     title "Certified total over time (lower is better)"
     x-axis ["grid", "v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "now"]
     y-axis "score" 22 --> 29
-    line [28.94, 28.36, 27.32, 26.79, 22.48, 22.37, 22.36, 22.26, 22.2603, 22.2499]
+    line [28.94, 28.36, 27.32, 26.79, 22.48, 22.37, 22.36, 22.26, 22.2603, 22.2499, 22.2382, 22.2362, 22.2318, 22.2247]
 ```
 
 ---
@@ -233,7 +233,7 @@ flowchart TD
 | `README.md` | This file |
 | `PROJECT_REPORT.md` | Short factual report |
 | `docs/index.html` | Interactive explorer (tiers, chart, search, table) |
-| `data_out/submission_22.2362420.csv` | The submitted file (500,500 rows) |
+| `data_out/submission_22.2246648.csv` | The submitted file (500,500 rows) |
 | `data_out/quality_by_n.csv` | n, L, excess, tier, tilted squares |
 | `best_fit_summary.csv` | One row per n up to 2000 (rows > 1000 are outside the competition) |
 | `best_fit.csv`, `best_fit_101_500.csv`, `best_fit_501_1000.csv` | Per-square rows for the best packings |
