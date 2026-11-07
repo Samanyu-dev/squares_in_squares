@@ -77,3 +77,8 @@ Every step came from merging public work with per-puzzle certification, never fr
 1. A leader publishing a notebook or dataset (the 3-hourly check picks it up).
 2. New structure for the weak and bad tiers, especially n just above a perfect square (962 to 967, 901 to 906, 842 to 847): richer gadget catalogs, mixed-angle seams, rectangular MILP refills.
 3. Reaching 22.0 would need layouts nobody has published; none of our own methods has produced one.
+
+## 7 Nov update
+- Kaggle 22.2246648506 (final_enforced11, per-puzzle merge incl. jazivxt Boxed In, certified with isolated_cert).
+- Per-puzzle leader sides form lift chains L(n)=L(n')+m (23 of 407 behind-puzzles, e.g. 259->445->488->681->734->967); our deficit is identical along a chain, so only improving the root helps. No lift gain exists today (checked).
+- Hot kick+quench on roots 259,202,228,292,328,442,444: no gain. seedband.py (corner-to-corner band seeds): no gain. Chains on n>=100 top-gap puzzles and AWS n>=500 chains still running.

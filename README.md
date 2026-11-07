@@ -4,7 +4,7 @@
 
 ### Packing *n* unit squares into the smallest possible square, for every *n* = 1 … 1000
 
-![Kaggle score](https://img.shields.io/badge/Kaggle%20score-22.23624-brightgreen?style=for-the-badge&logo=kaggle)
+![Kaggle score](https://img.shields.io/badge/Kaggle%20score-22.22466-brightgreen?style=for-the-badge&logo=kaggle)
 ![Grid baseline](https://img.shields.io/badge/grid%20baseline-28.9377-lightgrey?style=for-the-badge)
 ![Leaderboard top](https://img.shields.io/badge/LB%20top-22.054-orange?style=for-the-badge)
 ![Python](https://img.shields.io/badge/python-3.14-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -58,8 +58,8 @@ The area bound says L ≥ √n, so the cost of a puzzle is the *wasted* fraction
 
 <table>
 <tr><th>Item</th><th>Value</th></tr>
-<tr><td>🟢 <b>Our Kaggle score</b></td><td><b>22.2362359319</b> (submitted 2026-11-06, equals the local score to 9 digits). Certified local best 22.2318355 (7 Nov, not yet submitted)</td></tr>
-<tr><td>Previous submission</td><td>22.2498820302</td></tr>
+<tr><td>🟢 <b>Our Kaggle score</b></td><td><b>22.2246648506</b> (submitted 2026-11-07, merged public Boxed In + our chains, equals the certified local score)</td></tr>
+<tr><td>Previous submission</td><td>22.2362359319</td></tr>
 <tr><td>Grid baseline (start)</td><td>28.9377</td></tr>
 <tr><td>Leaderboard top (2026-11-06)</td><td>22.0544 · 22.0871 · 22.1217 · 22.1224</td></tr>
 <tr><td>Gap to top</td><td>0.195</td></tr>
