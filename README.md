@@ -130,11 +130,11 @@ Excess = `L/√n − 1` for each puzzle.
 
 | Tier | Excess | n count | Share of total | Examples |
 |---|---|--:|--:|---|
-| 🟢 **Perfect** | 0 | 31 | 0 | n = 1, 4, 9, …, 961 (perfect squares) |
+| 🟢 **Perfect** | 0 | 31 | 0.00 | n = 1, 4, 9, …, 961 (perfect squares) |
 | 🔵 **Near perfect** | < 0.4% | 69 | 0.16 | n = K²−1, K²−2 (255, 288, 323, …, 960) |
 | 🟡 **Middle** | 0.4 – 1.2% | 162 | 1.29 | 48, 63, 80, 98, 99, 119, 120, … |
-| 🟠 **Weak** | 1.2 – 2.5% | 482 | 8.68 | 24 … 999 |
-| 🔴 **Bad** | > 2.5% | 256 | 12.12 | all n ≤ 411, mostly small and mid n |
+| 🟠 **Weak** | 1.2 – 2.5% | 483 | 8.69 | 24 … 999 |
+| 🔴 **Bad** | > 2.5% | 255 | 12.09 | all n ≤ 411, mostly small and mid n |
 
 Small-n values (the proven or published optima):
 
@@ -147,9 +147,9 @@ Score by range of n:
 | n range | Score sum | Mean per puzzle |
 |---|--:|--:|
 | 1 – 100 | 6.3012 | 0.0630 |
-| 101 – 300 | 5.4884 | 0.0274 |
-| 301 – 600 | 5.3025 | 0.0177 |
-| 601 – 1000 | 5.1578 | 0.0129 |
+| 101 – 300 | 5.4873 | 0.0274 |
+| 301 – 600 | 5.2948 | 0.0176 |
+| 601 – 1000 | 5.1413 | 0.0129 |
 
 👉 **[Open the interactive explorer](docs/index.html)** (enable GitHub Pages on `/docs` to use it online, or open the file locally). It has tier filters, a hover chart, a search box and a sortable table.
 
